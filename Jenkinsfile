@@ -1,14 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Code Review') {
             steps {
-                echo 'Building Master Branch...'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying Master Branch...'
+                echo 'Performing Code Review for Feature Branch...'
             }
         }
     }
